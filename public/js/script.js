@@ -70,3 +70,23 @@ const tweet1 = {
   for (let i = 0; i <= 9; i++) {
     console.log('Notify Friends!', i);
   }
+
+  // String contcatenation
+const firstname = 'Romero';
+const lastname = 'Dong Ullo';
+firstname.trim() +' '+ lastname.trim();
+
+// Tempalte literal
+`${firstname.trim()} ${lastname.trim()}`;
+
+// String methods
+firstname.length;
+lastname.length;
+`${firstname.trim()} ${lastname.trim()}`.length;
+(firstname.trim() + ' ' + lastname.trim()).length;
+firstname.toUpperCase();
+lastname.charAt(1);
+`${firstname.trim()} ${lastname.trim()}`.chartAt(0);
+`${firstname.trim()} .charAt())}${lastname.trim().charAt()};`
+`${firstname.trim()} .charAt())}${lastname.trim().charAt()};`
+`${lastname.trim().charAt()}; {firstname.trim().charAt()};`
