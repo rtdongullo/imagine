@@ -90,3 +90,69 @@ lastname.charAt(1);
 `${firstname.trim()} .charAt())}${lastname.trim().charAt()};`
 `${firstname.trim()} .charAt())}${lastname.trim().charAt()};`
 `${lastname.trim().charAt()}; {firstname.trim().charAt()};`
+
+// Write a function that will ass a participant to our google classrooom
+
+const participants= [];
+function addParticipant(email) {
+  // check if email is valid
+  if(!email) {
+    return 'Email not provided';
+  }
+  // check if email is valid
+  if(!email.includes('@')) {
+     return 'invalid email provided';
+  }
+  // Add email to participants
+  participants.push(email);
+  // Notify them via mail
+  // return response
+   return 'Participant added!';
+}
+
+addParticipant('dongromerot@gmail.com');
+
+
+// Arrays in Javascript
+
+const alphabets= ['A', 'B', 'C', 'D'];
+alphabets;
+alphabets.join(' ');
+alphabets.join(' ').split(' ');
+
+const user = {
+  firstname: 'Joe',
+  lastname: 'Ganner',
+}
+
+function fullname(user){
+  return {
+    ...user,
+    fullname: `${user.firstname} ${user.lastname}`
+  }
+}
+fullname(user);
+
+// Array Map
+const users = [
+  {firstname: 'Linda', lastname: 'Parker'},
+  {firstname: 'Mark', lastname: 'Twaine'},
+  {firstname: 'Oliver', lastname: 'Queen'},
+  {firstname: 'Stephen', lastname: 'Grider'},
+  {firstname: 'Elon', lastname: 'Musk'} 
+]
+users.map(fullname);
+
+// Map and return squares of numbers
+function square(number){
+  return number ** 2;
+}
+const numbers = [0,1,2,3,4,5]
+numbers.map(square)
+
+// filter and return even numbers
+function even(number){
+  return number % 2 === 0;
+}
+numbers.filter(even)
+
